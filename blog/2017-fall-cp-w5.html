@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>2017 Fall CP 第五週 - 2017Fall CADP&CP (虎尾科大MDE)</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="./2017-fall-cp-w5.html">
+
+        <meta name="author" content="40623129" />
+        <meta name="keywords" content="2017fall,CP,W5,PyQt5" />
+        <meta name="description" content="W5 PyQt5 +心得" />
+
+        <meta property="og:site_name" content="2017Fall CADP&CP (虎尾科大MDE)" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="2017 Fall CP 第五週"/>
+        <meta property="og:url" content="./2017-fall-cp-w5.html"/>
+        <meta property="og:description" content="W5 PyQt5 +心得"/>
+        <meta property="article:published_time" content="2017-10-12" />
+            <meta property="article:section" content="Course" />
+            <meta property="article:tag" content="2017fall" />
+            <meta property="article:tag" content="CP" />
+            <meta property="article:tag" content="W5" />
+            <meta property="article:tag" content="PyQt5" />
+            <meta property="article:author" content="40623129" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="2017Fall CADP&CP (虎尾科大MDE) ATOM Feed"/>
+
+<script type="text/javascript" src="./../data/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushBash.js"></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "./../data/syntaxhighlighter/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "./../data/syntaxhighlighter/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+2017Fall CADP&CP (虎尾科大MDE)            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./category/course.html">Course</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="./search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./2017-fall-cp-w5.html"
+                       rel="bookmark"
+                       title="Permalink to 2017 Fall CP 第五週">
+                        2017 Fall CP 第五週
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-10-12T11:00:00+08:00"> 週四 12 十月 2017</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/40623129.html"><i class="fa fa-user"></i> 40623129</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/2017fall.html">2017fall</a>
+        /
+	<a href="./tag/cp.html">CP</a>
+        /
+	<a href="./tag/w5.html">W5</a>
+        /
+	<a href="./tag/pyqt5.html">PyQt5</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>W5 PyQt5 +心得</p>
+
+
+<p>第一次聽到這門課覺得還蠻新奇的，經過幾周的上課之後開始了解這門課對程式的重要，雖然有時有點跟不上，但這門課還有好處就是還有錄製影片可以回家看，讓我用科技無時無刻的學習。
+<pre class="brush: python"></p>
+<h1>!/usr/bin/env python</h1>
+<p>import math</p>
+<p>from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (QApplication, QGridLayout, QLayout, QLineEdit,
+        QSizePolicy, QToolButton, QWidget)</p>
+<p>class Button(QToolButton):
+    '''
+    def <strong>init</strong>(self, text, parent=None):
+        super(Button, self).<strong>init</strong>(parent)
+    '''
+    # for Python 3
+    def <strong>init</strong>(self, text):
+        super().<strong>init</strong>()</p>
+<div class="highlight"><pre><span></span>    self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+    self.setText(text)
+
+def sizeHint(self):
+    size = super(Button, self).sizeHint()
+    size.setHeight(size.height() + 20)
+    size.setWidth(max(size.width(), size.height()))
+    return size
+</pre></div>
+
+
+<p>class Calculator(QWidget):
+    NumDigitButtons = 10</p>
+<div class="highlight"><pre><span></span><span class="s s-Atom">&#39;&#39;&#39;    </span>
+<span class="s s-Atom">def __init__(self, parent=None):</span>
+<span class="s s-Atom">    super(Calculator, self).__init__(parent)</span>
+<span class="s s-Atom">&#39;&#39;&#39;</span>
+<span class="s s-Atom">def</span> <span class="k">__</span><span class="nf">init__</span><span class="p">(</span><span class="s s-Atom">self</span><span class="p">)</span><span class="s s-Atom">:</span>
+    <span class="nf">super</span><span class="p">().</span><span class="k">__</span><span class="nf">init__</span><span class="p">()</span>
+
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">pendingAdditiveOperator</span> <span class="o">=</span> <span class="s s-Atom">&#39;&#39;</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">pendingMultiplicativeOperator</span> <span class="o">=</span> <span class="s s-Atom">&#39;&#39;</span>
+
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">sumInMemory</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">sumSoFar</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">factorSoFar</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">waitingForOperand</span> <span class="o">=</span> <span class="nv">True</span>
+
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">display</span> <span class="o">=</span> <span class="nv">QLineEdit</span><span class="p">(</span><span class="s s-Atom">&#39;0&#39;</span><span class="p">)</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">display</span><span class="p">.</span><span class="nf">setReadOnly</span><span class="p">(</span><span class="nv">True</span><span class="p">)</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">display</span><span class="p">.</span><span class="nf">setAlignment</span><span class="p">(</span><span class="nv">Qt</span><span class="p">.</span><span class="nv">AlignRight</span><span class="p">)</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">display</span><span class="p">.</span><span class="nf">setMaxLength</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+
+    <span class="s s-Atom">font</span> <span class="o">=</span> <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">display</span><span class="p">.</span><span class="nf">font</span><span class="p">()</span>
+    <span class="s s-Atom">font</span><span class="p">.</span><span class="nf">setPointSize</span><span class="p">(</span><span class="s s-Atom">font</span><span class="p">.</span><span class="nf">pointSize</span><span class="p">()</span> <span class="o">+</span> <span class="mi">8</span><span class="p">)</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">display</span><span class="p">.</span><span class="nf">setFont</span><span class="p">(</span><span class="s s-Atom">font</span><span class="p">)</span>
+
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">digitButtons</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="s s-Atom">for</span> <span class="s s-Atom">i</span> <span class="s s-Atom">in</span> <span class="nf">range</span><span class="p">(</span><span class="nv">Calculator</span><span class="p">.</span><span class="nv">NumDigitButtons</span><span class="p">)</span><span class="s s-Atom">:</span>
+        <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">digitButtons</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="s s-Atom">self</span><span class="p">.</span><span class="nf">createButton</span><span class="p">(</span><span class="nf">str</span><span class="p">(</span><span class="s s-Atom">i</span><span class="p">),</span>
+                <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">digitClicked</span><span class="p">))</span>
+
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">pointButton</span> <span class="o">=</span> <span class="s s-Atom">self</span><span class="p">.</span><span class="nf">createButton</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">pointClicked</span><span class="p">)</span>
+    <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">changeSignButton</span> <span class="o">=</span> <span class="s s-Atom">self</span><span class="p">.</span><span class="nf">createButton</span><span class="p">(</span><span class="s s-Atom">u</span><span class="err">&quot;</span><span class="s s-Atom">\</span><span class="nv">N</span><span class="p">{</span><span class="nv">PLUS</span><span class="o">-</span><span class="nv">MINUS</span> <span class="nv">SIGN</span><span class="p">}</span><span class="s2">&quot;,</span>
+<span class="s2">            self.changeSignClicked)</span>
+
+<span class="s2">    self.backspaceButton = self.createButton(&quot;</span><span class="nv">Backspace</span><span class="s2">&quot;,</span>
+<span class="s2">            self.backspaceClicked)</span>
+<span class="s2">    self.clearButton = self.createButton(&quot;</span><span class="nv">Clear</span><span class="s2">&quot;, self.clear)</span>
+<span class="s2">    self.clearAllButton = self.createButton(&quot;</span><span class="nv">Clear</span> <span class="nv">All</span><span class="s2">&quot;, self.clearAll)</span>
+
+<span class="s2">    self.clearMemoryButton = self.createButton(&quot;</span><span class="nv">MC</span><span class="s2">&quot;, self.clearMemory)</span>
+<span class="s2">    self.readMemoryButton = self.createButton(&quot;</span><span class="nv">MR</span><span class="s2">&quot;, self.readMemory)</span>
+<span class="s2">    self.setMemoryButton = self.createButton(&quot;</span><span class="nv">MS</span><span class="s2">&quot;, self.setMemory)</span>
+<span class="s2">    self.addToMemoryButton = self.createButton(&quot;</span><span class="nv">M</span><span class="s s-Atom">+</span><span class="s2">&quot;, self.addToMemory)</span>
+
+<span class="s2">    self.divisionButton = self.createButton(u&quot;</span><span class="s s-Atom">\</span><span class="nv">N</span><span class="p">{</span><span class="nv">DIVISION</span> <span class="nv">SIGN</span><span class="p">}</span><span class="s2">&quot;,</span>
+<span class="s2">            self.multiplicativeOperatorClicked)</span>
+<span class="s2">    self.timesButton = self.createButton(u&quot;</span><span class="s s-Atom">\</span><span class="nv">N</span><span class="p">{</span><span class="nv">MULTIPLICATION</span> <span class="nv">SIGN</span><span class="p">}</span><span class="s2">&quot;,</span>
+<span class="s2">            self.multiplicativeOperatorClicked)</span>
+<span class="s2">    self.minusButton = self.createButton(&quot;</span><span class="s s-Atom">-</span><span class="s2">&quot;, self.additiveOperatorClicked)</span>
+<span class="s2">    self.plusButton = self.createButton(&quot;</span><span class="s s-Atom">+</span><span class="s2">&quot;, self.additiveOperatorClicked)</span>
+
+<span class="s2">    self.squareRootButton = self.createButton(&quot;</span><span class="nv">Sqrt</span><span class="s2">&quot;,</span>
+<span class="s2">            self.unaryOperatorClicked)</span>
+<span class="s2">    self.powerButton = self.createButton(u&quot;</span><span class="s s-Atom">x\</span><span class="nv">N</span><span class="p">{</span><span class="nv">SUPERSCRIPT</span> <span class="nv">TWO</span><span class="p">}</span><span class="s2">&quot;,</span>
+<span class="s2">            self.unaryOperatorClicked)</span>
+<span class="s2">    self.reciprocalButton = self.createButton(&quot;</span><span class="mi">1</span><span class="o">/</span><span class="s s-Atom">x</span><span class="s2">&quot;,</span>
+<span class="s2">            self.unaryOperatorClicked)</span>
+<span class="s2">    self.equalButton = self.createButton(&quot;</span><span class="s s-Atom">=</span><span class="s2">&quot;, self.equalClicked)</span>
+
+<span class="s2">    mainLayout = QGridLayout()</span>
+<span class="s2">    mainLayout.setSizeConstraint(QLayout.SetFixedSize)</span>
+
+<span class="s2">    mainLayout.addWidget(self.display, 0, 0, 1, 6)</span>
+<span class="s2">    mainLayout.addWidget(self.backspaceButton, 1, 0, 1, 2)</span>
+<span class="s2">    mainLayout.addWidget(self.clearButton, 1, 2, 1, 2)</span>
+<span class="s2">    mainLayout.addWidget(self.clearAllButton, 1, 4, 1, 2)</span>
+
+<span class="s2">    mainLayout.addWidget(self.clearMemoryButton, 2, 0)</span>
+<span class="s2">    mainLayout.addWidget(self.readMemoryButton, 3, 0)</span>
+<span class="s2">    mainLayout.addWidget(self.setMemoryButton, 4, 0)</span>
+<span class="s2">    mainLayout.addWidget(self.addToMemoryButton, 5, 0)</span>
+
+<span class="s2">    for i in range(1, Calculator.NumDigitButtons):</span>
+<span class="s2">        row = ((9 - i) / 3) + 2</span>
+<span class="s2">        column = ((i - 1) % 3) + 1</span>
+<span class="s2">        mainLayout.addWidget(self.digitButtons[i], row, column)</span>
+
+<span class="s2">    mainLayout.addWidget(self.digitButtons[0], 5, 1)</span>
+<span class="s2">    mainLayout.addWidget(self.pointButton, 5, 2)</span>
+<span class="s2">    mainLayout.addWidget(self.changeSignButton, 5, 3)</span>
+
+<span class="s2">    mainLayout.addWidget(self.divisionButton, 2, 4)</span>
+<span class="s2">    mainLayout.addWidget(self.timesButton, 3, 4)</span>
+<span class="s2">    mainLayout.addWidget(self.minusButton, 4, 4)</span>
+<span class="s2">    mainLayout.addWidget(self.plusButton, 5, 4)</span>
+
+<span class="s2">    mainLayout.addWidget(self.squareRootButton, 2, 5)</span>
+<span class="s2">    mainLayout.addWidget(self.powerButton, 3, 5)</span>
+<span class="s2">    mainLayout.addWidget(self.reciprocalButton, 4, 5)</span>
+<span class="s2">    mainLayout.addWidget(self.equalButton, 5, 5)</span>
+<span class="s2">    self.setLayout(mainLayout)</span>
+
+<span class="s2">    self.setWindowTitle(&quot;</span><span class="nv">Calculator</span><span class="s2">&quot;)</span>
+
+<span class="s2">def digitClicked(self):</span>
+<span class="s2">    clickedButton = self.sender()</span>
+<span class="s2">    digitValue = int(clickedButton.text())</span>
+
+<span class="s2">    if self.display.text() == &#39;0&#39; and digitValue == 0.0:</span>
+<span class="s2">        return</span>
+
+<span class="s2">    if self.waitingForOperand:</span>
+<span class="s2">        self.display.clear()</span>
+<span class="s2">        self.waitingForOperand = False</span>
+
+<span class="s2">    self.display.setText(self.display.text() + str(digitValue))</span>
+
+<span class="s2">def unaryOperatorClicked(self):</span>
+<span class="s2">    clickedButton = self.sender()</span>
+<span class="s2">    clickedOperator = clickedButton.text()</span>
+<span class="s2">    operand = float(self.display.text())</span>
+
+<span class="s2">    if clickedOperator == &quot;</span><span class="nv">Sqrt</span><span class="s2">&quot;:</span>
+<span class="s2">        if operand &lt; 0.0:</span>
+<span class="s2">            self.abortOperation()</span>
+<span class="s2">            return</span>
+
+<span class="s2">        result = math.sqrt(operand)</span>
+<span class="s2">    elif clickedOperator == u&quot;</span><span class="s s-Atom">x\</span><span class="nv">N</span><span class="p">{</span><span class="nv">SUPERSCRIPT</span> <span class="nv">TWO</span><span class="p">}</span><span class="s2">&quot;:</span>
+<span class="s2">        result = math.pow(operand, 2.0)</span>
+<span class="s2">    elif clickedOperator == &quot;</span><span class="mi">1</span><span class="o">/</span><span class="s s-Atom">x</span><span class="s2">&quot;:</span>
+<span class="s2">        if operand == 0.0:</span>
+<span class="s2">            self.abortOperation()</span>
+<span class="s2">            return</span>
+
+<span class="s2">        result = 1.0 / operand</span>
+
+<span class="s2">    self.display.setText(str(result))</span>
+<span class="s2">    self.waitingForOperand = True</span>
+
+<span class="s2">def additiveOperatorClicked(self):</span>
+<span class="s2">    clickedButton = self.sender()</span>
+<span class="s2">    clickedOperator = clickedButton.text()</span>
+<span class="s2">    operand = float(self.display.text())</span>
+
+<span class="s2">    if self.pendingMultiplicativeOperator:</span>
+<span class="s2">        if not self.calculate(operand, self.pendingMultiplicativeOperator):</span>
+<span class="s2">            self.abortOperation()</span>
+<span class="s2">            return</span>
+
+<span class="s2">        self.display.setText(str(self.factorSoFar))</span>
+<span class="s2">        operand = self.factorSoFar</span>
+<span class="s2">        self.factorSoFar = 0.0</span>
+<span class="s2">        self.pendingMultiplicativeOperator = &#39;&#39;</span>
+
+<span class="s2">    if self.pendingAdditiveOperator:</span>
+<span class="s2">        if not self.calculate(operand, self.pendingAdditiveOperator):</span>
+<span class="s2">            self.abortOperation()</span>
+<span class="s2">            return</span>
+
+<span class="s2">        self.display.setText(str(self.sumSoFar))</span>
+<span class="s2">    else:</span>
+<span class="s2">        self.sumSoFar = operand</span>
+
+<span class="s2">    self.pendingAdditiveOperator = clickedOperator</span>
+<span class="s2">    self.waitingForOperand = True</span>
+
+<span class="s2">def multiplicativeOperatorClicked(self):</span>
+<span class="s2">    clickedButton = self.sender()</span>
+<span class="s2">    clickedOperator = clickedButton.text()</span>
+<span class="s2">    operand = float(self.display.text())</span>
+
+<span class="s2">    if self.pendingMultiplicativeOperator:</span>
+<span class="s2">        if not self.calculate(operand, self.pendingMultiplicativeOperator):</span>
+<span class="s2">            self.abortOperation()</span>
+<span class="s2">            return</span>
+
+<span class="s2">        self.display.setText(str(self.factorSoFar))</span>
+<span class="s2">    else:</span>
+<span class="s2">        self.factorSoFar = operand</span>
+
+<span class="s2">    self.pendingMultiplicativeOperator = clickedOperator</span>
+<span class="s2">    self.waitingForOperand = True</span>
+
+<span class="s2">def equalClicked(self):</span>
+<span class="s2">    operand = float(self.display.text())</span>
+
+<span class="s2">    if self.pendingMultiplicativeOperator:</span>
+<span class="s2">        if not self.calculate(operand, self.pendingMultiplicativeOperator):</span>
+<span class="s2">            self.abortOperation()</span>
+<span class="s2">            return</span>
+
+<span class="s2">        operand = self.factorSoFar</span>
+<span class="s2">        self.factorSoFar = 0.0</span>
+<span class="s2">        self.pendingMultiplicativeOperator = &#39;&#39;</span>
+
+<span class="s2">    if self.pendingAdditiveOperator:</span>
+<span class="s2">        if not self.calculate(operand, self.pendingAdditiveOperator):</span>
+<span class="s2">            self.abortOperation()</span>
+<span class="s2">            return</span>
+
+<span class="s2">        self.pendingAdditiveOperator = &#39;&#39;</span>
+<span class="s2">    else:</span>
+<span class="s2">        self.sumSoFar = operand</span>
+
+<span class="s2">    self.display.setText(str(self.sumSoFar))</span>
+<span class="s2">    self.sumSoFar = 0.0</span>
+<span class="s2">    self.waitingForOperand = True</span>
+
+<span class="s2">def pointClicked(self):</span>
+<span class="s2">    if self.waitingForOperand:</span>
+<span class="s2">        self.display.setText(&#39;0&#39;)</span>
+
+<span class="s2">    if &quot;</span><span class="p">.</span><span class="s2">&quot; not in self.display.text():</span>
+<span class="s2">        self.display.setText(self.display.text() + &quot;</span><span class="p">.</span><span class="s2">&quot;)</span>
+
+<span class="s2">    self.waitingForOperand = False</span>
+
+<span class="s2">def changeSignClicked(self):</span>
+<span class="s2">    text = self.display.text()</span>
+<span class="s2">    value = float(text)</span>
+
+<span class="s2">    if value &gt; 0.0:</span>
+<span class="s2">        text = &quot;</span><span class="s s-Atom">-</span><span class="s2">&quot; + text</span>
+<span class="s2">    elif value &lt; 0.0:</span>
+<span class="s2">        text = text[1:]</span>
+
+<span class="s2">    self.display.setText(text)</span>
+
+<span class="s2">def backspaceClicked(self):</span>
+<span class="s2">    if self.waitingForOperand:</span>
+<span class="s2">        return</span>
+
+<span class="s2">    text = self.display.text()[:-1]</span>
+<span class="s2">    if not text:</span>
+<span class="s2">        text = &#39;0&#39;</span>
+<span class="s2">        self.waitingForOperand = True</span>
+
+<span class="s2">    self.display.setText(text)</span>
+
+<span class="s2">def clear(self):</span>
+<span class="s2">    if self.waitingForOperand:</span>
+<span class="s2">        return</span>
+
+<span class="s2">    self.display.setText(&#39;0&#39;)</span>
+<span class="s2">    self.waitingForOperand = True</span>
+
+<span class="s2">def clearAll(self):</span>
+<span class="s2">    self.sumSoFar = 0.0</span>
+<span class="s2">    self.factorSoFar = 0.0</span>
+<span class="s2">    self.pendingAdditiveOperator = &#39;&#39;</span>
+<span class="s2">    self.pendingMultiplicativeOperator = &#39;&#39;</span>
+<span class="s2">    self.display.setText(&#39;0&#39;)</span>
+<span class="s2">    self.waitingForOperand = True</span>
+
+<span class="s2">def clearMemory(self):</span>
+<span class="s2">    self.sumInMemory = 0.0</span>
+
+<span class="s2">def readMemory(self):</span>
+<span class="s2">    self.display.setText(str(self.sumInMemory))</span>
+<span class="s2">    self.waitingForOperand = True</span>
+
+<span class="s2">def setMemory(self):</span>
+<span class="s2">    self.equalClicked()</span>
+<span class="s2">    self.sumInMemory = float(self.display.text())</span>
+
+<span class="s2">def addToMemory(self):</span>
+<span class="s2">    self.equalClicked()</span>
+<span class="s2">    self.sumInMemory += float(self.display.text())</span>
+
+<span class="s2">def createButton(self, text, member):</span>
+<span class="s2">    button = Button(text)</span>
+<span class="s2">    button.clicked.connect(member)</span>
+<span class="s2">    return button</span>
+
+<span class="s2">def abortOperation(self):</span>
+<span class="s2">    self.clearAll()</span>
+<span class="s2">    self.display.setText(&quot;</span><span class="s s-Atom">####</span><span class="s2">&quot;)</span>
+
+<span class="s2">def calculate(self, rightOperand, pendingOperator):</span>
+<span class="s2">    if pendingOperator == &quot;</span><span class="s s-Atom">+</span><span class="s2">&quot;:</span>
+<span class="s2">        self.sumSoFar += rightOperand</span>
+<span class="s2">    elif pendingOperator == &quot;</span><span class="s s-Atom">-</span><span class="s2">&quot;:</span>
+<span class="s2">        self.sumSoFar -= rightOperand</span>
+<span class="s2">    elif pendingOperator == u&quot;</span><span class="s s-Atom">\</span><span class="nv">N</span><span class="p">{</span><span class="nv">MULTIPLICATION</span> <span class="nv">SIGN</span><span class="p">}</span><span class="s2">&quot;:</span>
+<span class="s2">        self.factorSoFar *= rightOperand</span>
+<span class="s2">    elif pendingOperator == u&quot;</span><span class="s s-Atom">\</span><span class="nv">N</span><span class="p">{</span><span class="nv">DIVISION</span> <span class="nv">SIGN</span><span class="p">}</span><span class="err">&quot;</span><span class="s s-Atom">:</span>
+        <span class="s s-Atom">if</span> <span class="s s-Atom">rightOperand</span> <span class="o">==</span> <span class="mf">0.0</span><span class="s s-Atom">:</span>
+            <span class="s s-Atom">return</span> <span class="nv">False</span>
+
+        <span class="s s-Atom">self</span><span class="p">.</span><span class="s s-Atom">factorSoFar</span> <span class="s s-Atom">/=</span> <span class="s s-Atom">rightOperand</span>
+
+    <span class="s s-Atom">return</span> <span class="nv">True</span>
+</pre></div>
+
+
+<p>if <strong>name</strong> == '<strong>main</strong>':</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+<span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+<span class="n">calc</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">())</span>
+</pre></div>
+
+
+</pre>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="./40623129-2017-fall-cp-w9.html">
+                            2017 Fall CP 第九週
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623129-2017-fall-cp-w9-2.html">
+                            2017 Fall CP 第九週
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623129-2017-fall-cp-w7-exam.html">
+                            2017 Fall CP 第七週考試
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./40623129-2017-fall-cp-w7exam.html">
+                            2017 Fall CP 第七週考試
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./2017-fall-cp-w6.html">
+                            2017 Fall CP 第六週
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+                <ul class="list-group" id="categories">
+                    <li class="list-group-item">
+                        <a href="./category/course.html">
+                            <i class="fa fa-folder-open fa-lg"></i> Course
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group list-inline tagcloud" id="tags">
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/DandyDev/pelican-bootstrap3/" target="_blank">
+                pelican-bootstrap3
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/getpelican/pelican-plugins" target="_blank">
+                pelican-plugins
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/Tipue/Tipue-Search" target="_blank">
+                Tipue search
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 KMOL
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- for https://github.com/jsor/lity lightbox video popup -->
+
+<link href="./theme/css/lity.css" rel="stylesheet">
+
+<script src="./theme/js/lity.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
