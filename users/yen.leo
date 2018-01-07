@@ -100,7 +100,7 @@
 <v t="leo.20171109005430.2"><vh>內容</vh></v>
 </v>
 </v>
-<v t="leo.20180108000151.1"><vh>10-12</vh>
+<v t="leo.20180108000151.1" a="E"><vh>10-12</vh>
 <v t="leo.20180108000151.2" a="E"><vh>上課大綱</vh>
 <v t="leo.20180108000151.3"><vh>內容</vh></v>
 </v>
@@ -120,7 +120,7 @@
 <v t="leo.20180108000151.13"><vh>內容</vh></v>
 </v>
 </v>
-<v t="leo.20180108000201.1"><vh>13-15</vh>
+<v t="leo.20180108000201.1" a="E"><vh>13-15</vh>
 <v t="leo.20180108000201.2" a="E"><vh>上課大綱</vh>
 <v t="leo.20180108000201.3"><vh>內容</vh></v>
 </v>
@@ -1229,12 +1229,6 @@ Eric6介面介紹
 * DiaPortable 與 GIMPPortable 的使用 
 * github創建
 * 計算機表單繼承方法
-
-[w10blog](https://40623128.github.io/w15/blog/40623128-w10-view.html)
-
-[w11 blog](https://40623128.github.io/w15/blog/40623128-w11-view.html)
-
-[w12 blog](https://40623128.github.io/w15/blog/40623128-w12-view.html)
 </t>
 <t tx="leo.20180108000151.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -1305,11 +1299,7 @@ Eric6介面介紹
 * 與組員協同製作計算機基本功能
 * 驗收計算機成果
 
-[w13 blog](https://40623128.github.io/w15/blog/40623128-w13-view.html)
 
-[w14 blog](https://40623128.github.io/w15/blog/40623128-w14-view.html)
-
-[w15 blog](https://40623128.github.io/w15/blog/40623128-w15-view.html)
 </t>
 <t tx="leo.20180108000201.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
