@@ -100,6 +100,37 @@
 <v t="leo.20171109005430.2"><vh>內容</vh></v>
 </v>
 </v>
+<v t="leo.20180108000151.1"><vh>10-12</vh>
+<v t="leo.20180108000151.2" a="E"><vh>上課大綱</vh>
+<v t="leo.20180108000151.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20180108000151.4" a="E"><vh>學習計算機輸入數字寫法</vh>
+<v t="leo.20180108000151.5"><vh>內容</vh></v>
+</v>
+<v t="leo.20180108000151.6" a="E"><vh>自訂義啟動與關閉</vh>
+<v t="leo.20180108000151.7"><vh>內容</vh></v>
+</v>
+<v t="leo.20180108000151.8" a="E"><vh>DiaPortable 與 GIMPPortable 的使用</vh>
+<v t="leo.20180108000151.9"><vh>內容</vh></v>
+</v>
+<v t="leo.20180108000151.10" a="E"><vh>github創建</vh>
+<v t="leo.20180108000151.11"><vh>內容</vh></v>
+</v>
+<v t="leo.20180108000151.12" a="E"><vh>計算機表單繼承方法</vh>
+<v t="leo.20180108000151.13"><vh>內容</vh></v>
+</v>
+</v>
+<v t="leo.20180108000201.1"><vh>13-15</vh>
+<v t="leo.20180108000201.2" a="E"><vh>上課大綱</vh>
+<v t="leo.20180108000201.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20180108000201.4" a="E"><vh>創建EtherCalc表單</vh>
+<v t="leo.20180108000201.5"><vh>內容</vh></v>
+</v>
+<v t="leo.20180108000201.6" a="E"><vh>與組員協同製作計算機基本功能</vh>
+<v t="leo.20180108000201.7"><vh>內容</vh></v>
+</v>
+</v>
 <v t="leo.20170911090822.1"><vh>隨身碟內容介紹</vh>
 <v t="leo.20170911090822.2"><vh>Win 64 位元專用</vh></v>
 </v>
@@ -1144,6 +1175,170 @@ Eric6介面介紹
 驗收簡報 (20%): 16 分
 
 總分 : 75 分</t>
+<t tx="leo.20180108000151.1">&lt;section&gt;
+    @others
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000151.10">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000151.11"># github創建
+
+創建github帳號
+
+新增計算機計畫
+
+</t>
+<t tx="leo.20180108000151.12">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000151.13"># 計算機表單繼承方法 
+
+###學習如何繼承run.py與計算機按鈕
+
+
+</t>
+<t tx="leo.20180108000151.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000151.3"># W10-W12 檢討週
+
+* 學習計算機輸入數字寫法
+* 自訂義啟動與關閉
+* DiaPortable 與 GIMPPortable 的使用 
+* github創建
+* 計算機表單繼承方法
+
+[w10blog](https://40623128.github.io/w15/blog/40623128-w10-view.html)
+
+[w11 blog](https://40623128.github.io/w15/blog/40623128-w11-view.html)
+
+[w12 blog](https://40623128.github.io/w15/blog/40623128-w12-view.html)
+</t>
+<t tx="leo.20180108000151.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000151.5">## 學習計算機輸入數字寫法
+
+(for迴圈簡化程式)
+
+```
+@language python
+    number = [self.one,  self.two,  self.three,   self.four,  self.five,
+      self.six,self.seven,  self.eight,  self.nine,  self.zero]
+        for i in number:
+            i.clicked.connect(self.digitClicked)
+```
+</t>
+<t tx="leo.20180108000151.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000151.7">### 自訂義啟動與關閉
+
+改寫star.bat與stop.bat成自訂義形式</t>
+<t tx="leo.20180108000151.8">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000151.9">### DiaPortable 與 GIMPPortable 的使用
+
+使用DiaPortable 畫出更流線的箭頭 
+
+使用GIMPPortable 裁剪圖片</t>
+<t tx="leo.20180108000201.1">&lt;section&gt;
+    @others
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000201.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000201.3"># W13-W15 專案執行週
+
+* 創建EtherCalc表單
+* 與組員協同製作計算機基本功能
+* 驗收計算機成果
+
+[w13 blog](https://40623128.github.io/w15/blog/40623128-w13-view.html)
+
+[w14 blog](https://40623128.github.io/w15/blog/40623128-w14-view.html)
+
+[w15 blog](https://40623128.github.io/w15/blog/40623128-w15-view.html)
+</t>
+<t tx="leo.20180108000201.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000201.5">## 創建EtherCalc表單
+
+創建EtherCalc表單
+
+透過概念、知識、執行、自學與想像等標示整理課程學習歷程
+
+</t>
+<t tx="leo.20180108000201.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180108000201.7">### 與組員協同製作計算機基本功能
+
+開始使用github協同製作計算機基本功能包括加減乘除等並排除衝突</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
