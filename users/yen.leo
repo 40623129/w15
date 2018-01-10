@@ -1380,7 +1380,11 @@ github是個能讓許多人一起完成協同開發同一項程式，就算許�
 </t>
 <t tx="leo.20180111002318.2">### 筆記
 
-&lt;img src="https://cpa.kmol.info/40623129/raw/7961a5e23b3660c383168477b90a05f4ab198c125667534100d7f4b7e4b42467?m=image/png" width="200" height="125"&gt;&lt;/a&gt;
+&lt;img src="https://raw.githubusercontent.com/40623129/w15/gh-pages/data/image/6282.jpg" width="125" height="200"&gt;&lt;/a&gt;
+&lt;img src="https://raw.githubusercontent.com/40623129/w15/gh-pages/data/image/6281.jpg" width="125" height="200"&gt;&lt;/a&gt;
+&lt;img src="https://raw.githubusercontent.com/40623129/w15/gh-pages/data/image/6279.jpg" width="125" height="200"&gt;&lt;/a&gt;
+&lt;img src="https://raw.githubusercontent.com/40623129/w15/gh-pages/data/image/6278.jpg" width="125" height="200"&gt;&lt;/a&gt;
+&lt;img src="https://raw.githubusercontent.com/40623129/w15/gh-pages/data/image/6277.jpg" width="125" height="200"&gt;&lt;/a&gt;
 </t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
