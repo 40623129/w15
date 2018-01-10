@@ -83,7 +83,7 @@
 <v t="leo.20171108210436.9"><vh>內容</vh></v>
 </v>
 </v>
-<v t="leo.20171108211731.1"><vh>7-9</vh>
+<v t="leo.20171108211731.1" a="E"><vh>7-9</vh>
 <v t="leo.20171108211731.2"><vh>7-9</vh>
 <v t="leo.20171108211731.3"><vh>內容</vh></v>
 </v>
@@ -96,7 +96,7 @@
 <v t="leo.20171108211731.8"><vh>w9</vh>
 <v t="leo.20171108211731.9"><vh>內容</vh></v>
 </v>
-<v t="leo.20171109005430.1"><vh>自評</vh>
+<v t="leo.20171109005430.1" a="E"><vh>自評</vh>
 <v t="leo.20171109005430.2"><vh>內容</vh></v>
 </v>
 </v>
@@ -110,14 +110,14 @@
 <v t="leo.20180108000151.6" a="E"><vh>自訂義啟動與關閉</vh>
 <v t="leo.20180108000151.7"><vh>內容</vh></v>
 </v>
-<v t="leo.20180108000151.8" a="E"><vh>DiaPortable 與 GIMPPortable 的使用</vh>
-<v t="leo.20180108000151.9"><vh>內容</vh></v>
-</v>
 <v t="leo.20180108000151.10" a="E"><vh>github創建</vh>
 <v t="leo.20180108000151.11"><vh>內容</vh></v>
 </v>
 <v t="leo.20180108000151.12" a="E"><vh>計算機表單繼承方法</vh>
 <v t="leo.20180108000151.13"><vh>內容</vh></v>
+</v>
+<v t="leo.20180111000931.1" a="E"><vh>心得</vh>
+<v t="leo.20180111000931.2"><vh>內容</vh></v>
 </v>
 </v>
 <v t="leo.20180108000201.1" a="E"><vh>13-15</vh>
@@ -129,6 +129,12 @@
 </v>
 <v t="leo.20180108000201.6" a="E"><vh>與組員協同製作計算機基本功能</vh>
 <v t="leo.20180108000201.7"><vh>內容</vh></v>
+</v>
+<v t="leo.20180111001225.1" a="E"><vh>心得</vh>
+<v t="leo.20180111001225.2"><vh>內容</vh></v>
+</v>
+<v t="leo.20180111000850.1" a="E"><vh>期末</vh>
+<v t="leo.20180111000850.2"><vh>內容</vh></v>
 </v>
 </v>
 <v t="leo.20170911090822.1"><vh>隨身碟內容介紹</vh>
@@ -1226,7 +1232,6 @@ Eric6介面介紹
 
 * 學習計算機輸入數字寫法
 * 自訂義啟動與關閉
-* DiaPortable 與 GIMPPortable 的使用 
 * github創建
 * 計算機表單繼承方法
 </t>
@@ -1263,20 +1268,6 @@ Eric6介面介紹
 <t tx="leo.20180108000151.7">### 自訂義啟動與關閉
 
 改寫star.bat與stop.bat成自訂義形式</t>
-<t tx="leo.20180108000151.8">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20180108000151.9">### DiaPortable 與 GIMPPortable 的使用
-
-使用DiaPortable 畫出更流線的箭頭 
-
-使用GIMPPortable 裁剪圖片</t>
 <t tx="leo.20180108000201.1">&lt;section&gt;
     @others
 &lt;/section&gt;
@@ -1329,6 +1320,52 @@ Eric6介面介紹
 <t tx="leo.20180108000201.7">### 與組員協同製作計算機基本功能
 
 開始使用github協同製作計算機基本功能包括加減乘除等並排除衝突</t>
+<t tx="leo.20180111000850.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180111000850.2"># 自評成績
+
+出席 (20%): 15 分
+
+平時表現 (30%): 23 分
+
+驗收考試 (30%):21 分
+
+驗收簡報 (20%): 16 分
+
+總分 : 75 分</t>
+<t tx="leo.20180111000931.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180111000931.2">### 心得
+
+github是個能讓許多人一起完成協同開發同一項程式，就算許多人一起製作過程中有錯誤 ，github協同作業也能抓出做錯的那個人是誰，也能知道自己的錯誤在哪，讓我們一起討論錯誤，漸漸地就能把一個城市變得更完整。
+
+</t>
+<t tx="leo.20180111001225.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20180111001225.2">### 心得
+
+因為我學習的速度跟組員們相比落後的很多，所以在開發計算機程式的時候也只能做比較簡單的工作，但是組裡的人在製作的過程我都會去旁邊看慢慢學習，希望日後我能跟上他們，在一起做出更棒的程式。</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
